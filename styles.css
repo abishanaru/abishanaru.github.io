@@ -33,15 +33,62 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
-.about{
+.profile{
+  margin-top: -900px;
+  font-size: 55px;
+  position: absolute;
+  color: rgb(255, 0, 0);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.cv{
   text-align: center;
+  font-size: 55px;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 900px;
+}
+
+.contact{
+  text-align: center;
+  font-size: 55px;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  transform: rotate(90deg);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: -900px;
+}
+
+.portfolio{
   font-size: 55px;
   position: absolute;
   color: rgb(0, 0, 0);
   transform: rotate(-90deg);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  align-items:flex-start;
   margin-left: -900px;
 }
 
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: #000000;
+}
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+  color: rgb(249, 229, 216);
+}
+/* selected link */
+a:active {
+  text-decoration: none;
+  color: #000000;
+}
