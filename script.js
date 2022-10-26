@@ -20,16 +20,21 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-window.addEventListener("scroll", () => {
-  addStickyClasses();
-});
+// Mobile Nav
+document.getElementById("nav-mobile").addEventListener("click", expandNav);
 
-function addStickyClasses() {
-  let nav = document.getElementById("nav-main");
-  let reference = document.getElementById("reference");
-  if (window.scrollY > reference.offsetTop) {
-    nav.classList.add("sticky");
-  } else {
-    nav.classList.remove("sticky");
+async function expandNav() {
+  let navElements = document.getElementsByClassName("mobile-nav-option");
+  let position = 0;
+  let zIndex = -1;
+  for (let element of navElements) {
+    element.style.bottom = `${position}rem`;
+    element.style.zIndex = `${zIndex}rem`;
+    position += 6;
+    zIndex--;
+    await new Promise((r) => setTimeout(r, 100));
+    element.style.width
+      ? (element.style.width = null)
+      : (element.style.width = `4.5rem`);
   }
 }
