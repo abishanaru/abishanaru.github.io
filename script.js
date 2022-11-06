@@ -39,7 +39,7 @@ async function expandNav() {
   }
 }
 
-// Knaye West API
+// Kanye West API
 const kanye_quote = document.getElementById("kanye");
 const kanye_button = document.getElementById("kanyebt");
 
@@ -49,4 +49,22 @@ function getRandomkanyequotes() {
   fetch("https://api.kanye.rest/")
     .then((response) => response.json())
     .then((data) => (kanye_quote.innerHTML = data.quote));
+}
+
+// Contact form submit function
+
+function funcsub() {
+  var buton = document.querySelector("#contact-form");
+  var screen = document.querySelector(".result");
+  var form = document.querySelector("#contact-form");
+  var inputs = form.querySelectorAll("input,textarea");
+  inputs.forEach((input) => {
+    if (input.value == "") {
+      screen.innerHTML = "Please enter full information";
+      return false;
+    } else {
+      screen.innerHTML = "Message Sent";
+      return true;
+    }
+  });
 }

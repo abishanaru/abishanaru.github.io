@@ -99,8 +99,8 @@ main {
 #topButton {
   display: none;
   position: fixed;
-  bottom: 70px;
-  right: 10px;
+  bottom: 4px;
+  right: 59px;
   z-index: 22;
   border: none;
   outline: none;
@@ -138,7 +138,7 @@ main {
   height: 45px;
 }
 #nav-mobile a {
-  background: #a19e7b;
+  background: transparent;
   position: absolute;
   width: 0;
   overflow: hidden;
@@ -153,7 +153,6 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   min-height: 550px;
   margin: 0;
   padding: 10px;
@@ -219,4 +218,62 @@ section h1 {
 
 #kanye {
   color: aliceblue;
+}
+
+.main-heading {
+  font-size: 34px;
+}
+
+#home {
+  height: auto;
+}
+
+/* Contact form  */
+.form-wraper {
+  max-width: 700px;
+  width: 100%;
+}
+.form-wraper form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.form-wraper ::placeholder {
+  margin-left: 5px;
+  padding: 2px;
+  color: #000;
+}
+.formsec1 {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+.formsec1 input {
+  width: 50%;
+}
+.formsec2 input {
+  width: 100%;
+}
+.formsec3 textarea {
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border-color: black;
+  border-width: 2px;
+  height: 300px;
+}
+.form-wraper input {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border-color: black;
+}
+.formsec4 button {
+  width: 50%;
+  height: 50px;
+  background-color: #3cab90;
+}
+.formsec4 button:hover {
+  background-color: #2c6e5e;
 }
