@@ -38,3 +38,15 @@ async function expandNav() {
       : (element.style.width = `4.5rem`);
   }
 }
+
+// Knaye West API
+const kanye_quote = document.getElementById("kanye");
+const kanye_button = document.getElementById("kanyebt");
+
+kanye_button.addEventListener("click", getRandomkanyequotes);
+
+function getRandomkanyequotes() {
+  fetch("https://api.kanye.rest/")
+    .then((response) => response.json())
+    .then((data) => (kanye_quote.innerHTML = data.quote));
+}
