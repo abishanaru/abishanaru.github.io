@@ -222,7 +222,7 @@ a:hover {
 }
 a:hover img {
   text-decoration: none;
-  background-color: rgb(241, 178, 136);
+  background-color: #f1b288;
   transition: all 0.15s linear;
 }
 /* selected link */
@@ -543,7 +543,6 @@ section h1 {
   .container2 {
     width: 80%;
     padding-left: 70px;
-    /* padding-right: 25px; */
   }
 
   /* Make sure that all arrows are pointing leftwards */
@@ -590,4 +589,11 @@ section h1 {
     row-gap: 20px;
     flex-direction: column;
   }
+}
+/*Lava Lamp Background https://codepen.io/innersociety*/
+canvas {
+  position: absolute;
+  z-index: 0.1;
+  width: 100%;
+  height: 100%;
 }
