@@ -365,10 +365,34 @@ section h1 {
 }
 
 #kanye {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  margin-top: -25%;
+  margin-left: 17.5%;
+  width: 23%;
+  font-weight: 700;
 }
 
-.main-heading {
+#kanyebt {
+  background-color: transparent;
+  border: transparent;
+  width: 30%;
+}
+
+#kanyebt img {
+  width: 150%;
+}
+
+.kanyebtdes {
+  color: aliceblue;
+  margin-left: 2.5em;
+}
+
+.imgsprechblasekanye {
+  background-color: transparent;
+}
+
+.shake:hover .main-heading {
   font-size: 34px;
   text-align: center;
 }
