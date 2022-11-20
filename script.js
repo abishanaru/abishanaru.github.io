@@ -52,7 +52,6 @@ function getRandomkanyequotes() {
 }
 
 // Contact form submit function
-
 function funcsub() {
   var buton = document.querySelector("#contact-form");
   var screen = document.querySelector(".result");

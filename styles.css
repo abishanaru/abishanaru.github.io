@@ -358,10 +358,12 @@ section h1 {
 }
 
 .spotify {
-  width: 50%;
-  position: absolute;
-  bottom: 0em;
-  margin-left: 50vh;
+  align-items: center;
+}
+
+.spotifydes {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
 }
 
 #kanye {
@@ -377,6 +379,7 @@ section h1 {
   background-color: transparent;
   border: transparent;
   width: 30%;
+  cursor: pointer;
 }
 
 #kanyebt img {
@@ -384,7 +387,7 @@ section h1 {
 }
 
 .kanyebtdes {
-  color: aliceblue;
+  color: white;
   margin-left: 2.5em;
 }
 
@@ -612,6 +615,29 @@ section h1 {
     display: flex;
     row-gap: 20px;
     flex-direction: column;
+  }
+  #kanye {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-top: -90%;
+    margin-left: 59%;
+    width: 80%;
+    font-weight: 700;
+  }
+  #kanyebt {
+    width: 65%;
+    position: absolute;
+    margin-top: -9em;
+  }
+
+  #kanyebt img {
+    width: 150%;
+  }
+
+  .kanyebtdes {
+    position: absolute;
+    margin-left: 2em;
+    margin-top: 17em;
   }
 }
 /*Lava Lamp Background https://codepen.io/innersociety*/
