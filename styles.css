@@ -369,10 +369,11 @@ section h1 {
 #kanye {
   color: rgb(0, 0, 0);
   position: absolute;
-  margin-top: -25%;
-  margin-left: 17.5%;
-  width: 23%;
+  margin-top: -85%;
+  margin-left: 58%;
+  width: 86%;
   font-weight: 700;
+  font-size: 180%;
 }
 
 #kanyebt {
@@ -380,6 +381,8 @@ section h1 {
   border: transparent;
   width: 30%;
   cursor: pointer;
+  position: absolute;
+  left: 25%;
 }
 
 #kanyebt img {
@@ -389,6 +392,9 @@ section h1 {
 .kanyebtdes {
   color: white;
   margin-left: 2.5em;
+  bottom: 38%;
+  left: 28%;
+  position: absolute;
 }
 
 .imgsprechblasekanye {
@@ -623,11 +629,13 @@ section h1 {
     margin-left: 59%;
     width: 80%;
     font-weight: 700;
+    font-size: 100%;
   }
   #kanyebt {
     width: 65%;
     position: absolute;
-    margin-top: -9em;
+    bottom: 0em;
+    left: 5%;
   }
 
   #kanyebt img {
@@ -636,8 +644,8 @@ section h1 {
 
   .kanyebtdes {
     position: absolute;
-    margin-left: 2em;
-    margin-top: 17em;
+    bottom: 33%;
+    left: 6%;
   }
 }
 /*Lava Lamp Background https://codepen.io/innersociety*/
