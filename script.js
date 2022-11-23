@@ -28,7 +28,7 @@ async function expandNav() {
   let position = 0;
   let zIndex = -1;
   for (let element of navElements) {
-    element.style.bottom = `${position}rem`;
+    element.style.widthbottom = `${position}rem`;
     element.style.zIndex = `${zIndex}rem`;
     position += 6;
     zIndex--;
